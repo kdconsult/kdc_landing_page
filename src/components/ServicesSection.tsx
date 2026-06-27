@@ -20,61 +20,61 @@ const SERVICES = [
     icon: <SupportAgentIcon sx={{ fontSize: 32 }} />,
     color: '#2563EB',
     bg: '#EFF6FF',
-    title: 'Managed IT Services',
-    tagline: 'Your outsourced IT department',
+    title: 'Управлявани ИТ услуги',
+    tagline: 'Вашият външен ИТ отдел',
     description:
-      'Full-spectrum IT management — from helpdesk and desktop support to proactive monitoring, patch management, and IT strategy advisory.',
-    features: ['Help Desk (L1/L2/L3)', 'Proactive Monitoring', 'Patch Management', 'IT Strategy Advisory'],
+      'Пълно управление на ИТ среда — от Help Desk и поддръжка на потребителите до проактивен мониторинг, управление на актуализации и стратегически ИТ консултации.',
+    features: ['Help Desk (L1/L2/L3)', 'Проактивен мониторинг', 'Управление на актуализации', 'ИТ стратегически консултации'],
   },
   {
     icon: <SecurityIcon sx={{ fontSize: 32 }} />,
     color: '#059669',
     bg: '#ECFDF5',
-    title: 'Cybersecurity',
-    tagline: 'Protect what matters most',
+    title: 'Киберсигурност',
+    tagline: 'Защита на най-ценното',
     description:
-      'Enterprise-grade security posture: vulnerability assessments, endpoint protection, SIEM monitoring, phishing simulation, and regulatory compliance.',
-    features: ['Vulnerability Assessments', 'Endpoint Security (EDR)', 'SIEM & Log Monitoring', 'GDPR Compliance'],
+      'Корпоративно ниво на защита: оценка на уязвимости, защита на крайни устройства, SIEM мониторинг, симулации на фишинг атаки и съответствие с регулаторните изисквания.',
+    features: ['Оценка на уязвимости', 'Защита на крайни устройства (EDR)', 'SIEM и мониторинг на логове', 'Съответствие с GDPR'],
   },
   {
     icon: <CloudIcon sx={{ fontSize: 32 }} />,
     color: '#7C3AED',
     bg: '#F5F3FF',
-    title: 'Cloud Solutions',
-    tagline: 'Migrate, optimize, scale',
+    title: 'Облачни решения',
+    tagline: 'Миграция, оптимизация, мащабиране',
     description:
-      'Azure and hybrid cloud architecture, migration planning, licensing optimization, and managed cloud operations — designed for Bulgarian enterprises.',
-    features: ['Azure Architecture', 'Cloud Migration', 'License Optimization', 'Hybrid Environments'],
+      'Azure и хибридна облачна архитектура, планиране на миграции, оптимизация на лицензи и управление на облачни операции — съобразени с нуждите на българските предприятия.',
+    features: ['Azure архитектура', 'Облачна миграция', 'Оптимизация на лицензи', 'Хибридни среди'],
   },
   {
     icon: <NetworkCheckIcon sx={{ fontSize: 32 }} />,
     color: '#DC2626',
     bg: '#FEF2F2',
-    title: 'Network Infrastructure',
-    tagline: 'Reliable connectivity at scale',
+    title: 'Мрежова инфраструктура',
+    tagline: 'Надеждна свързаност в мащаб',
     description:
-      'Structured cabling, Wi-Fi design, firewall configuration, VPN, SD-WAN, and ongoing network health monitoring — built for uptime.',
-    features: ['Firewall & VPN Setup', 'Wi-Fi Design & Rollout', 'SD-WAN', 'Network Monitoring'],
+      'Структурно окабеляване, проектиране на Wi-Fi, конфигурация на Firewall, VPN, SD-WAN и непрекъснат мониторинг на мрежовото здраве — изградени за максимална наличност.',
+    features: ['Firewall и VPN настройка', 'Проектиране и изграждане на Wi-Fi', 'SD-WAN', 'Мрежов мониторинг'],
   },
   {
     icon: <StorageIcon sx={{ fontSize: 32 }} />,
     color: '#D97706',
     bg: '#FFFBEB',
-    title: 'Backup & Disaster Recovery',
-    tagline: 'Business continuity assured',
+    title: 'Архивиране и възстановяване при срив',
+    tagline: 'Гарантирана непрекъсваемост на бизнеса',
     description:
-      'Multi-tier backup strategies, off-site replication, RPO/RTO planning, and regular DR testing to keep your data safe and recoverable.',
-    features: ['Automated Backups', 'Off-site Replication', 'RPO/RTO Planning', 'DR Testing'],
+      'Многослойни стратегии за архивиране, външна репликация, планиране на RPO/RTO и редовно тестване на DR — за да бъдат данните ви в безопасност и възстановими при всяка ситуация.',
+    features: ['Автоматизирано архивиране', 'Външна репликация', 'Планиране на RPO/RTO', 'Тестване на възстановяване'],
   },
   {
     icon: <ComputerIcon sx={{ fontSize: 32 }} />,
     color: '#0891B2',
     bg: '#ECFEFF',
-    title: 'IT Procurement & Deployment',
-    tagline: 'Right hardware, right time',
+    title: 'ИТ доставки и внедряване',
+    tagline: 'Точният хардуер в точния момент',
     description:
-      'Hardware sourcing, licensing procurement, workstation imaging, server deployment, and lifecycle management — from spec to shelf.',
-    features: ['Hardware Sourcing', 'Workstation Imaging', 'Server Deployment', 'Lifecycle Management'],
+      'Доставка на хардуер, лицензиране, имиджиране на работни станции, внедряване на сървъри и управление на жизнения цикъл — от спецификацията до крайния потребител.',
+    features: ['Доставка на хардуер', 'Имиджиране на работни станции', 'Внедряване на сървъри', 'Управление на жизнения цикъл'],
   },
 ];
 
@@ -92,15 +92,15 @@ export default function ServicesSection() {
             variant="subtitle2"
             sx={{ color: 'secondary.main', mb: 1.5 }}
           >
-            What We Do
+            Какво предлагаме
           </Typography>
           <Typography variant="h2" sx={{ mb: 2.5, color: 'text.primary' }}>
-            Comprehensive IT Services
-            <Box component="span" sx={{ color: 'secondary.main' }}> Built for Business</Box>
+            Цялостни ИТ услуги
+            <Box component="span" sx={{ color: 'secondary.main' }}> за вашия бизнес</Box>
           </Typography>
           <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 520 }}>
-            From day-to-day IT operations to long-term digital transformation —
-            K&amp;D Consult provides the expertise and infrastructure your organization needs to thrive.
+            От ежедневните ИТ операции до дългосрочната дигитална трансформация —
+            K&amp;D Consult предоставя експертизата и инфраструктурата, от които организацията ви се нуждае, за да се развива.
           </Typography>
         </Box>
 
@@ -186,7 +186,7 @@ export default function ServicesSection() {
             href="#contact"
             sx={{ borderRadius: 2, borderWidth: 2, '&:hover': { borderWidth: 2 } }}
           >
-            Discuss Your IT Needs
+            Обсъдете вашите ИТ нужди
           </Button>
         </Box>
       </Container>

@@ -15,68 +15,68 @@ import StarIcon from '@mui/icons-material/Star';
 const PLANS = [
   {
     name: 'Essential',
-    tagline: 'SMB foundation',
-    priceNote: 'Starting from',
+    tagline: 'Основа за малкия бизнес',
+    priceNote: 'От',
     price: '€149',
-    unit: '/mo per device',
-    description: 'Core managed IT for small teams — monitoring, helpdesk access, and security essentials.',
+    unit: 'на устройство/мес.',
+    description: 'Основни управлявани ИТ услуги за малки екипи — мониторинг, Help Desk и базова защита.',
     features: [
-      'Remote helpdesk (business hours)',
-      'Proactive device monitoring',
-      'Windows patch management',
-      'Antivirus & endpoint protection',
-      'Monthly IT health report',
-      'Up to 25 endpoints',
+      'Отдалечена поддръжка (в работно време)',
+      'Проактивен мониторинг на устройства',
+      'Управление на актуализации за Windows',
+      'Антивирусна защита на крайни устройства',
+      'Месечен ИТ отчет',
+      'До 25 устройства',
     ],
-    excluded: ['On-site support', '24/7 coverage', 'Advanced security'],
-    cta: 'Get Started',
+    excluded: ['Поддръжка на място', 'Денонощно покритие', 'Разширена сигурност'],
+    cta: 'Започнете',
     popular: false,
     accentColor: '#2563EB',
     accentBg: '#EFF6FF',
   },
   {
     name: 'Business',
-    tagline: 'Most popular',
-    priceNote: 'Starting from',
+    tagline: 'Най-популярен',
+    priceNote: 'От',
     price: '€249',
-    unit: '/mo per device',
-    description: 'Full managed IT services with extended support hours, cloud integration, and security monitoring.',
+    unit: 'на устройство/мес.',
+    description: 'Цялостни управлявани ИТ услуги с разширено работно време, облачна интеграция и мониторинг на сигурността.',
     features: [
-      'Helpdesk 8am–8pm + on-call',
-      'On-site support (8 hrs/mo)',
-      'Full patch & update management',
-      'EDR + SIEM monitoring',
-      'Cloud backup (365 days retention)',
-      'Azure / Microsoft 365 management',
-      'Quarterly business review',
-      'Up to 100 endpoints',
+      'Поддръжка 8:00–20:00 + дежурство',
+      'Поддръжка на място (8 часа/мес.)',
+      'Пълно управление на актуализации',
+      'EDR + SIEM мониторинг',
+      'Облачно архивиране (365 дни съхранение)',
+      'Управление на Azure / Microsoft 365',
+      'Тримесечен бизнес преглед',
+      'До 100 устройства',
     ],
-    excluded: ['24/7 NOC', 'Custom SLAs'],
-    cta: 'Get Started',
+    excluded: ['Денонощен NOC', 'Индивидуални SLA'],
+    cta: 'Започнете',
     popular: true,
     accentColor: '#0D2B5E',
     accentBg: '#EFF6FF',
   },
   {
     name: 'Enterprise',
-    tagline: 'Full-service IT partner',
-    priceNote: 'Custom pricing',
+    tagline: 'Цялостен ИТ партньор',
+    priceNote: 'Индивидуална цена',
     price: null,
-    unit: 'tailored to your scale',
-    description: 'Dedicated IT partnership with 24/7 NOC, custom SLAs, compliance support, and strategic advisory.',
+    unit: 'съобразена с вашия мащаб',
+    description: 'Персонализирано ИТ партньорство с денонощен NOC, индивидуални SLA, поддръжка за съответствие и стратегическо консултиране.',
     features: [
-      '24/7 NOC & helpdesk',
-      'Unlimited on-site support',
-      'Custom SLA (99.9% uptime)',
-      'Advanced threat intelligence',
-      'Disaster recovery planning & testing',
-      'Compliance support (GDPR, ISO)',
-      'Dedicated account manager',
-      'vCIO advisory services',
-      'Unlimited endpoints',
+      'Денонощен NOC и поддръжка',
+      'Неограничена поддръжка на място',
+      'Индивидуален SLA (99.9% наличност)',
+      'Разширен анализ на заплахи',
+      'Планиране и тестване на възстановяване при срив',
+      'Поддръжка за съответствие (GDPR, ISO)',
+      'Личен мениджър на акаунта',
+      'vCIO консултантски услуги',
+      'Неограничен брой устройства',
     ],
     excluded: [],
-    cta: 'Request a Quote',
+    cta: 'Заявете оферта',
     popular: false,
     accentColor: '#7C3AED',
     accentBg: '#F5F3FF',
@@ -84,12 +84,12 @@ const PLANS = [
 ];
 
 const ADD_ONS = [
-  { name: 'Microsoft 365 Licensing', price: 'From €8/user/mo' },
-  { name: 'Azure Cloud Hosting', price: 'From €49/mo' },
-  { name: 'Additional On-site Hours', price: '€75/hr' },
-  { name: 'Security Awareness Training', price: 'From €15/user/mo' },
-  { name: 'Backup Storage (per TB)', price: '€25/mo' },
-  { name: 'IT Procurement Service', price: 'No markup on hardware' },
+  { name: 'Лицензиране на Microsoft 365', price: 'От €8/потребител/мес.' },
+  { name: 'Azure облачен хостинг', price: 'От €49/мес.' },
+  { name: 'Допълнителни часове на място', price: '€75/час' },
+  { name: 'Обучение по киберсигурност', price: 'От €15/потребител/мес.' },
+  { name: 'Пространство за архиви (за TB)', price: '€25/мес.' },
+  { name: 'ИТ доставки', price: 'Без надценка върху хардуера' },
 ];
 
 export default function PricingSection() {
@@ -109,14 +109,14 @@ export default function PricingSection() {
         {/* Section header */}
         <Box sx={{ mb: { xs: 6, md: 8 }, textAlign: 'center' }}>
           <Typography variant="subtitle2" sx={{ color: 'secondary.main', mb: 1.5 }}>
-            Transparent Pricing
+            Прозрачно ценообразуване
           </Typography>
           <Typography variant="h2" sx={{ mb: 2.5 }}>
-            Plans for Every Scale
+            Планове за всеки мащаб
           </Typography>
           <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 520, mx: 'auto' }}>
-            No hidden fees, no lock-in contracts. Choose the tier that fits today —
-            scale as your business grows.
+            Без скрити такси и без обвързващи договори. Изберете подходящия за вас план днес
+            и го разширявайте с растежа на бизнеса си.
           </Typography>
         </Box>
 
@@ -153,7 +153,7 @@ export default function PricingSection() {
                   >
                     <Chip
                       icon={<StarIcon sx={{ fontSize: 14, color: '#F59E0B !important' }} />}
-                      label="Most Popular"
+                      label="Най-популярен"
                       size="small"
                       sx={{
                         bgcolor: '#FFFBEB',
@@ -237,7 +237,7 @@ export default function PricingSection() {
                         variant="h4"
                         sx={{ color: plan.popular ? '#fff' : 'secondary.main', fontWeight: 700 }}
                       >
-                        Let&apos;s Talk
+                        Да поговорим
                       </Typography>
                     )}
                   </Box>
@@ -304,14 +304,14 @@ export default function PricingSection() {
         {/* Add-ons */}
         <Box sx={{ mt: { xs: 8, md: 10 } }}>
           <Typography variant="h4" sx={{ mb: 1, textAlign: 'center' }}>
-            Add-on Services
+            Допълнителни услуги
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
             sx={{ textAlign: 'center', mb: 4 }}
           >
-            Extend any plan with optional services billed separately.
+            Разширете всеки план с допълнителни услуги, таксувани отделно.
           </Typography>
           <Grid container spacing={2}>
             {ADD_ONS.map((addon) => (
@@ -347,7 +347,7 @@ export default function PricingSection() {
 
         <Box sx={{ mt: 5, textAlign: 'center' }}>
           <Typography variant="body2" color="text.secondary">
-            All prices exclude VAT. Minimum contract: 12 months. Volume discounts available for 50+ endpoints.
+            Всички цени са без ДДС. Минимален срок на договор: 12 месеца. Отстъпки за обем при над 50 устройства.
           </Typography>
         </Box>
       </Container>

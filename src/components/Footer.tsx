@@ -16,16 +16,16 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 const FOOTER_LINKS = {
-  Services: [
-    'Managed IT Services',
-    'Cybersecurity',
-    'Cloud Solutions',
-    'Network Infrastructure',
-    'Backup & Disaster Recovery',
-    'IT Procurement',
+  Услуги: [
+    'Управлявани ИТ услуги',
+    'Киберсигурност',
+    'Облачни решения',
+    'Мрежова инфраструктура',
+    'Архивиране и възстановяване',
+    'ИТ доставки',
   ],
-  Company: ['About Us', 'Our Team', 'Partners', 'Case Studies', 'Blog', 'Careers'],
-  Legal: ['Privacy Policy', 'Cookie Policy', 'Terms of Service', 'GDPR Statement'],
+  Компания: ['За нас', 'Нашият екип', 'Партньори', 'Казуси', 'Блог', 'Кариери'],
+  'Правна информация': ['Политика за поверителност', 'Политика за бисквитки', 'Общи условия', 'Декларация за GDPR'],
 };
 
 export default function Footer() {
@@ -45,22 +45,22 @@ export default function Footer() {
             {/* Left: Contact details */}
             <Grid size={{ xs: 12, md: 5 }}>
               <Typography variant="subtitle2" sx={{ color: 'secondary.main', mb: 1.5 }}>
-                Get In Touch
+                Свържете се с нас
               </Typography>
               <Typography variant="h2" sx={{ mb: 2.5, fontSize: { xs: '1.75rem', md: '2.25rem' } }}>
-                Let&apos;s Discuss Your IT Needs
+                Нека обсъдим вашите ИТ нужди
               </Typography>
               <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
-                Book a free 30-minute IT audit with one of our senior engineers.
-                No commitment, no pressure — just practical insights for your business.
+                Запазете безплатен 30-минутен ИТ одит с някой от нашите старши инженери.
+                Без ангажименти и без натиск — само практични насоки за вашия бизнес.
               </Typography>
 
               <Stack spacing={2.5}>
                 {[
-                  { icon: <PhoneIcon sx={{ fontSize: 20, color: 'secondary.main' }} />, label: '+359 2 850 53 00', sub: 'Mon–Fri, 9:00–18:00' },
-                  { icon: <EmailIcon sx={{ fontSize: 20, color: 'secondary.main' }} />, label: 'info@kdconsult.eu', sub: 'We reply within 2 business hours' },
-                  { icon: <LocationOnIcon sx={{ fontSize: 20, color: 'secondary.main' }} />, label: '125 Tsarigradsko Shose Blvd, Sofia 1784', sub: 'Business Park Sofia, Building 2' },
-                  { icon: <AccessTimeIcon sx={{ fontSize: 20, color: 'secondary.main' }} />, label: 'Support: 24/7 for Enterprise clients', sub: 'Helpdesk: 8:00–20:00 for others' },
+                  { icon: <PhoneIcon sx={{ fontSize: 20, color: 'secondary.main' }} />, label: '+359 2 850 53 00', sub: 'Пон–Пет, 9:00–18:00' },
+                  { icon: <EmailIcon sx={{ fontSize: 20, color: 'secondary.main' }} />, label: 'info@kdconsult.eu', sub: 'Отговаряме до 2 работни часа' },
+                  { icon: <LocationOnIcon sx={{ fontSize: 20, color: 'secondary.main' }} />, label: 'бул. „Цариградско шосе“ 125, София 1784', sub: 'Бизнес Парк София, сграда 2' },
+                  { icon: <AccessTimeIcon sx={{ fontSize: 20, color: 'secondary.main' }} />, label: 'Поддръжка: 24/7 за Enterprise клиенти', sub: 'Help Desk: 8:00–20:00 за останалите' },
                 ].map((item) => (
                   <Box key={item.label} sx={{ display: 'flex', gap: 1.75, alignItems: 'flex-start' }}>
                     <Box
@@ -104,29 +104,29 @@ export default function Footer() {
                 }}
               >
                 <Typography variant="h5" sx={{ mb: 0.75, color: 'text.primary' }}>
-                  Request a Free IT Audit
+                  Заявете безплатен ИТ одит
                 </Typography>
                 <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                  Tell us about your business and current IT setup — we&apos;ll prepare a tailored assessment.
+                  Разкажете ни за вашия бизнес и текущата ИТ среда — ще подготвим индивидуална оценка.
                 </Typography>
 
                 <Grid container spacing={2}>
                   <Grid size={{ xs: 12, sm: 6 }}>
-                    <TextField fullWidth label="Full Name" variant="outlined" size="small" />
+                    <TextField fullWidth label="Име и фамилия" variant="outlined" size="small" />
                   </Grid>
                   <Grid size={{ xs: 12, sm: 6 }}>
-                    <TextField fullWidth label="Company Name" variant="outlined" size="small" />
+                    <TextField fullWidth label="Фирма" variant="outlined" size="small" />
                   </Grid>
                   <Grid size={{ xs: 12, sm: 6 }}>
-                    <TextField fullWidth label="Business Email" type="email" variant="outlined" size="small" />
+                    <TextField fullWidth label="Служебен имейл" type="email" variant="outlined" size="small" />
                   </Grid>
                   <Grid size={{ xs: 12, sm: 6 }}>
-                    <TextField fullWidth label="Phone Number" type="tel" variant="outlined" size="small" />
+                    <TextField fullWidth label="Телефон" type="tel" variant="outlined" size="small" />
                   </Grid>
                   <Grid size={12}>
                     <TextField
                       fullWidth
-                      label="Describe your IT needs or challenges"
+                      label="Опишете вашите ИТ нужди или предизвикателства"
                       multiline
                       rows={4}
                       variant="outlined"
@@ -142,13 +142,13 @@ export default function Footer() {
                       endIcon={<ArrowForwardIcon />}
                       sx={{ borderRadius: 2 }}
                     >
-                      Send Request
+                      Изпратете запитване
                     </Button>
                   </Grid>
                 </Grid>
 
                 <Typography variant="caption" color="text.disabled" sx={{ display: 'block', mt: 2 }}>
-                  By submitting this form you agree to our Privacy Policy. We never share your data with third parties.
+                  С изпращането на тази форма приемате нашата Политика за поверителност. Никога не споделяме вашите данни с трети страни.
                 </Typography>
               </Box>
             </Grid>
@@ -184,8 +184,8 @@ export default function Footer() {
                 </Typography>
               </Box>
               <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.55)', mb: 3, lineHeight: 1.7 }}>
-                Enterprise IT consulting and managed services provider based in Sofia, Bulgaria.
-                Serving Bulgarian and regional businesses since 2009.
+                Доставчик на корпоративни ИТ консултации и управлявани услуги със седалище в София, България.
+                Обслужваме български и регионални компании от 2009 г.
               </Typography>
               <Stack direction="row" spacing={1}>
                 {[
@@ -268,10 +268,10 @@ export default function Footer() {
             }}
           >
             <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem' }}>
-              &copy; {new Date().getFullYear()} K&amp;D Consult Ltd. All rights reserved. UIC: 175248163
+              &copy; {new Date().getFullYear()} K&amp;D Consult ООД. Всички права запазени. ЕИК: 175248163
             </Typography>
             <Stack direction="row" spacing={3}>
-              {['Privacy Policy', 'Terms', 'Cookies'].map((item) => (
+              {['Поверителност', 'Условия', 'Бисквитки'].map((item) => (
                 <Link
                   key={item}
                   href="#"

@@ -18,27 +18,27 @@ const CERTIFICATIONS = [
   'Fortinet Partner',
   'Veeam ProPartner',
   'VMware Partner',
-  'ISO 27001 Aligned',
+  'Съответствие с ISO 27001',
 ];
 
 const VALUES = [
   {
     icon: <EmojiEventsIcon sx={{ fontSize: 24, color: '#2563EB' }} />,
     bg: '#EFF6FF',
-    title: 'Proven Excellence',
-    desc: '15+ years delivering IT solutions to 200+ Bulgarian companies across finance, logistics, retail, and professional services.',
+    title: 'Доказан опит',
+    desc: '15+ години ИТ решения за 200+ български компании — от финансовия сектор и логистиката до търговията и професионалните услуги.',
   },
   {
     icon: <GroupsIcon sx={{ fontSize: 24, color: '#059669' }} />,
     bg: '#ECFDF5',
-    title: 'Senior-Level Engineers',
-    desc: 'Every client engagement is handled by certified engineers — not junior techs. We assign dedicated contacts who know your environment.',
+    title: 'Старши инженери',
+    desc: 'Всеки ангажимент се поема от сертифицирани инженери — не от начинаещи техници. Получавате конкретен технически контакт, добре запознат с вашата среда.',
   },
   {
     icon: <HandshakeIcon sx={{ fontSize: 24, color: '#7C3AED' }} />,
     bg: '#F5F3FF',
-    title: 'Partnership, Not Transactions',
-    desc: 'We align IT decisions to your business goals. Our vCIO advisory helps leadership make smarter technology investments.',
+    title: 'Партньорство, а не сделки',
+    desc: 'Свързваме ИТ решенията с бизнес целите ви. Нашите vCIO консултации помагат на ръководството да взема по-информирани и обосновани технологични решения.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function AboutSection() {
         {/* ── Full-width header ── */}
         <Box sx={{ mb: { xs: 6, md: 8 } }}>
           <Typography variant="subtitle2" sx={{ color: 'secondary.main', mb: 1.5 }}>
-            About K&amp;D Consult
+            За K&amp;D Consult
           </Typography>
           <Grid container spacing={{ xs: 0, md: 6 }} sx={{ alignItems: 'flex-end' }}>
             <Grid size={{ xs: 12, md: 6 }}>
@@ -62,16 +62,16 @@ export default function AboutSection() {
                 variant="h2"
                 sx={{ mb: { xs: 2, md: 0 }, fontSize: { xs: '1.75rem', md: '2.5rem' } }}
               >
-                Bulgaria&apos;s Trusted
-                <Box component="span" sx={{ color: 'secondary.main' }}> IT Partner</Box>
+                Доверен ИТ партньор
+                <Box component="span" sx={{ color: 'secondary.main' }}> в България</Box>
               </Typography>
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
               <Typography variant="body1" color="text.secondary" sx={{ lineHeight: 1.75 }}>
-                Founded in 2009, K&amp;D Consult has grown from a Sofia-based IT support firm
-                into one of Bulgaria&apos;s leading managed services and IT consulting providers —
-                delivering infrastructure that works and security that holds across finance,
-                logistics, retail, healthcare, and professional services.
+                Основана през 2009 г., K&amp;D Consult се разраства от софийска фирма за ИТ поддръжка
+                до един от водещите доставчици на управлявани услуги и ИТ консултации в България —
+                с инфраструктура, която работи, и сигурност, която издържа, в сферите на финансите,
+                логистиката, търговията, здравеопазването и професионалните услуги.
               </Typography>
             </Grid>
           </Grid>
@@ -120,10 +120,10 @@ export default function AboutSection() {
                 }}
               >
                 {[
-                  { value: '2009', label: 'Founded', sub: 'Sofia, Bulgaria' },
-                  { value: '200+', label: 'Active Clients', sub: 'Across 8 industries' },
-                  { value: '40+', label: 'Certified Engineers', sub: 'Senior-level only' },
-                  { value: '99.9%', label: 'Uptime SLA', sub: 'Enterprise tier' },
+                  { value: '2009', label: 'Основана', sub: 'София, България' },
+                  { value: '200+', label: 'Активни клиенти', sub: 'В 8 индустрии' },
+                  { value: '40+', label: 'Сертифицирани инженери', sub: 'Само старши специалисти' },
+                  { value: '99.9%', label: 'Наличност по SLA', sub: 'Enterprise ниво' },
                 ].map((stat) => (
                   <Box
                     key={stat.label}
@@ -171,8 +171,7 @@ export default function AboutSection() {
                     fontWeight: 300,
                   }}
                 >
-                  &ldquo;Our mission is to make enterprise-grade IT accessible
-                  to every Bulgarian business — regardless of size or sector.&rdquo;
+                  „Нашата мисия е да направим корпоративните ИТ услуги достъпни за всеки български бизнес — независимо от размера или сектора му.“
                 </Typography>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.25, mt: 2 }}>
                   <Box
@@ -191,10 +190,10 @@ export default function AboutSection() {
                   </Box>
                   <Box>
                     <Typography sx={{ color: '#fff', fontWeight: 600, fontSize: '0.8125rem' }}>
-                      K&amp;D Consult Leadership
+                      Ръководството на K&amp;D Consult
                     </Typography>
                     <Typography sx={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.7rem' }}>
-                      Sofia, Bulgaria · Est. 2009
+                      София, България · осн. 2009
                     </Typography>
                   </Box>
                 </Box>
@@ -261,7 +260,7 @@ export default function AboutSection() {
                   mb: 1.5,
                 }}
               >
-                Certifications &amp; Partnerships
+                Сертификати и партньорства
               </Typography>
               <Stack direction="row" sx={{ flexWrap: 'wrap', gap: 1 }}>
                 {CERTIFICATIONS.map((cert) => (
@@ -285,7 +284,7 @@ export default function AboutSection() {
               href="#contact"
               sx={{ borderRadius: 2 }}
             >
-              Schedule a Consultation
+              Запишете консултация
             </Button>
           </Grid>
         </Grid>

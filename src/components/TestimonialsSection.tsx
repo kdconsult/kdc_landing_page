@@ -13,75 +13,75 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 
 const TESTIMONIALS = [
   {
-    name: 'Georgi Petrov',
-    role: 'CEO',
+    name: 'Георги Петров',
+    role: 'Изпълнителен директор',
     company: 'FinTech Solutions BG',
-    initials: 'GP',
+    initials: 'ГП',
     color: '#2563EB',
     rating: 5,
     quote:
-      "K&D Consult transformed our IT from a bottleneck into a competitive advantage. Their team migrated us to Azure with zero downtime and reduced our infrastructure costs by 38%. Exceptional technical depth and true business partnership.",
-    service: 'Cloud Migration',
+      'K&D Consult превърна нашата ИТ инфраструктура от спирачка в конкурентно предимство. Екипът ни мигрира към Azure без нито минута прекъсване и намали инфраструктурните ни разходи с 38%. Изключителна техническа дълбочина и истинско бизнес партньорство.',
+    service: 'Облачна миграция',
     verified: true,
   },
   {
-    name: 'Maria Stoyanova',
-    role: 'Operations Director',
+    name: 'Мария Стоянова',
+    role: 'Оперативен директор',
     company: 'Interlogistics Ltd.',
-    initials: 'MS',
+    initials: 'МС',
     color: '#059669',
     rating: 5,
     quote:
-      "After a ransomware incident with our previous provider, K&D implemented a comprehensive security program. Their EDR and SIEM setup caught and neutralized two attempted breaches in the first three months. Peace of mind is priceless.",
-    service: 'Cybersecurity',
+      'След ransomware инцидент при предишния ни доставчик, K&D внедри цялостна програма за сигурност. Тяхната EDR и SIEM конфигурация засече и неутрализира два опита за пробив в първите три месеца. Спокойствието, което ни дадоха, няма цена.',
+    service: 'Киберсигурност',
     verified: true,
   },
   {
-    name: 'Nikolay Dimitrov',
-    role: 'CTO',
+    name: 'Николай Димитров',
+    role: 'Технически директор',
     company: 'ProBuild Group',
-    initials: 'ND',
+    initials: 'НД',
     color: '#7C3AED',
     rating: 5,
     quote:
-      "Three office locations, 120 employees, and a growing hybrid workforce — K&D manages it all seamlessly. Response times are consistently under 15 minutes and their engineers genuinely understand our business context.",
-    service: 'Managed IT Services',
+      'Три офиса, 120 служители и непрекъснато разрастваща се хибридна работна среда — K&D управлява всичко безпроблемно. Времето за реакция е трайно под 15 минути, а инженерите им наистина разбират нашия бизнес контекст.',
+    service: 'Управлявани ИТ услуги',
     verified: true,
   },
   {
-    name: 'Elena Radeva',
-    role: 'Finance Manager',
+    name: 'Елена Радева',
+    role: 'Финансов мениджър',
     company: 'Arcadia Retail Chain',
-    initials: 'ER',
+    initials: 'ЕР',
     color: '#DC2626',
     rating: 5,
     quote:
-      "We switched to K&D's Business plan after being let down by two other providers. From day one, the helpdesk quality and proactivity were completely different. Downtime has dropped to near zero and our team is more productive than ever.",
-    service: 'Business Plan',
+      'Преминахме към план Business на K&D след разочарование от двама предишни доставчика. От първия ден качеството на Help Desk и проактивността бяха на съвсем различно ниво. Престоят падна почти до нула, а екипът ни е по-продуктивен от всякога.',
+    service: 'План Business',
     verified: true,
   },
   {
-    name: 'Stefan Ivanov',
-    role: 'IT Manager',
+    name: 'Стефан Иванов',
+    role: 'ИТ мениджър',
     company: 'Pharma Distributors BG',
-    initials: 'SI',
+    initials: 'СИ',
     color: '#D97706',
     rating: 5,
     quote:
-      "The DR planning and backup service K&D designed for us met all our regulatory requirements and actually worked when we needed it during a server failure. Recovery was complete in under 2 hours versus days previously.",
-    service: 'Backup & DR',
+      'Планът за DR и услугата за архивиране, разработени от K&D, покриват всички наши регулаторни изисквания и се оказаха напълно работещи при реален сървърен срив. Възстановяването приключи за под 2 часа — преди отнемаше дни.',
+    service: 'Backup и DR',
     verified: true,
   },
   {
-    name: 'Ivanka Kostadinova',
-    role: 'Managing Partner',
+    name: 'Иванка Костадинова',
+    role: 'Управляващ съдружник',
     company: 'LegalCore Sofia',
-    initials: 'IK',
+    initials: 'ИК',
     color: '#0891B2',
     rating: 5,
     quote:
-      "As a law firm, data confidentiality is paramount. K&D's GDPR compliance support and network segmentation gave our partners confidence that client data is handled to the highest standard. Highly recommended for regulated industries.",
-    service: 'GDPR & Security',
+      'Като адвокатска кантора, поверителността на данните е от първостепенно значение. Поддръжката за съответствие с GDPR и мрежовата сегментация от K&D дадоха на нашите съдружници увереност, че клиентските данни се обработват по най-високите стандарти. Препоръчваме ги за всяка регулирана индустрия.',
+    service: 'GDPR и сигурност',
     verified: true,
   },
 ];
@@ -107,14 +107,13 @@ export default function TestimonialsSection() {
         {/* Header */}
         <Box sx={{ mb: { xs: 6, md: 8 }, maxWidth: 600 }}>
           <Typography variant="subtitle2" sx={{ color: 'secondary.main', mb: 1.5 }}>
-            Client Stories
+            Клиентски истории
           </Typography>
           <Typography variant="h2" sx={{ mb: 2.5 }}>
-            Trusted by Bulgarian Businesses
+            Доверен партньор на българския бизнес
           </Typography>
           <Typography variant="body1" color="text.secondary">
-            Real outcomes from real clients. Our clients stay with us for years
-            because we deliver measurable results, not just technical services.
+            Реални резултати от реални клиенти. Клиентите остават с нас с години, защото постигаме измерими резултати, а не просто технически услуги.
           </Typography>
         </Box>
 
@@ -147,7 +146,7 @@ export default function TestimonialsSection() {
                       fontSize: '0.9375rem',
                     }}
                   >
-                    &ldquo;{t.quote}&rdquo;
+                    „{t.quote}“
                   </Typography>
 
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, mt: 'auto' }}>
@@ -217,9 +216,9 @@ export default function TestimonialsSection() {
           }}
         >
           {[
-            { value: '4.9/5', label: 'Average Client Rating', sub: 'Based on 180+ reviews' },
-            { value: '94%', label: 'Client Retention Rate', sub: 'Year-over-year' },
-            { value: '< 15 min', label: 'Avg. Response Time', sub: 'For critical incidents' },
+            { value: '4.9/5', label: 'Среден рейтинг от клиенти', sub: 'На база 180+ отзива' },
+            { value: '94%', label: 'Задържане на клиенти', sub: 'На годишна база' },
+            { value: '< 15 min', label: 'Средно време за реакция', sub: 'При критични инциденти' },
           ].map((stat) => (
             <Box key={stat.label} sx={{ textAlign: 'center' }}>
               <Typography variant="h3" sx={{ color: '#fff', fontWeight: 700, mb: 0.25 }}>

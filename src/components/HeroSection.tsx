@@ -13,16 +13,16 @@ import SecurityIcon from '@mui/icons-material/Security';
 import CloudIcon from '@mui/icons-material/Cloud';
 
 const TRUST_BADGES = [
-  { icon: <VerifiedIcon sx={{ fontSize: 14 }} />, label: 'ISO 27001 Aligned' },
+  { icon: <VerifiedIcon sx={{ fontSize: 14 }} />, label: 'Съответствие с ISO 27001' },
   { icon: <VerifiedIcon sx={{ fontSize: 14 }} />, label: 'Microsoft Partner' },
-  { icon: <VerifiedIcon sx={{ fontSize: 14 }} />, label: '15+ Years Experience' },
+  { icon: <VerifiedIcon sx={{ fontSize: 14 }} />, label: '15+ години опит' },
 ];
 
 const STATS = [
-  { value: '200+', label: 'Clients Served' },
-  { value: '99.9%', label: 'Uptime SLA' },
-  { value: '15+', label: 'Years in IT' },
-  { value: '24/7', label: 'Support Coverage' },
+  { value: '200+', label: 'Обслужени клиенти' },
+  { value: '99.9%', label: 'Наличност по SLA' },
+  { value: '15+', label: 'Години в ИТ' },
+  { value: '24/7', label: 'Поддръжка' },
 ];
 
 export default function HeroSection() {
@@ -38,6 +38,7 @@ export default function HeroSection() {
         overflow: 'hidden',
         background: 'linear-gradient(150deg, #061A3A 0%, #0D2B5E 40%, #1A4A96 75%, #2563EB 100%)',
         pt: { xs: 10, md: 0 },
+        pb: { xs: 8, md: 0}
       }}
     >
       {/* Background geometric pattern */}
@@ -113,9 +114,9 @@ export default function HeroSection() {
                 fontSize: { xs: '2.25rem', sm: '3rem', md: '3.5rem' },
               }}
             >
-              Enterprise IT
+              Корпоративно ИТ,
               <Box component="span" sx={{ display: 'block', color: '#93C5FD' }}>
-                Managed with Precision
+                управлявано прецизно
               </Box>
             </Typography>
 
@@ -128,9 +129,9 @@ export default function HeroSection() {
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}
             >
-              K&amp;D Consult delivers end-to-end IT infrastructure, cybersecurity,
-              and cloud solutions for Bulgarian and regional enterprises — backed by
-              15+ years of proven expertise and 24/7 expert support.
+              K&amp;D Consult предлага цялостни решения за ИТ инфраструктура, киберсигурност
+              и облачни технологии за български и регионални компании — подкрепени от
+              над 15 години доказан опит и денонощна експертна поддръжка.
             </Typography>
 
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mb: 6 }}>
@@ -142,7 +143,7 @@ export default function HeroSection() {
                 href="#contact"
                 sx={{ borderRadius: 2 }}
               >
-                Get a Free IT Audit
+                Безплатен ИТ одит
               </Button>
               <Button
                 variant="outlined"
@@ -161,7 +162,7 @@ export default function HeroSection() {
                   },
                 }}
               >
-                Explore Services
+                Вижте услугите
               </Button>
             </Stack>
 
@@ -203,9 +204,9 @@ export default function HeroSection() {
           <Grid size={{ xs: 12, md: 5 }} sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
             <Box sx={{ position: 'relative', width: 360, height: 400 }}>
               {[
-                { icon: <CloudIcon sx={{ fontSize: 28, color: '#60A5FA' }} />, title: 'Cloud Infrastructure', desc: 'Azure & on-premises hybrid environments', top: 0, left: 20 },
-                { icon: <SecurityIcon sx={{ fontSize: 28, color: '#34D399' }} />, title: 'Cybersecurity', desc: 'Proactive threat detection & response', top: 130, left: 80 },
-                { icon: <SupportAgentIcon sx={{ fontSize: 28, color: '#F59E0B' }} />, title: '24/7 Help Desk', desc: 'Dedicated support engineers on-call', top: 260, left: 10 },
+                { icon: <CloudIcon sx={{ fontSize: 28, color: '#60A5FA' }} />, title: 'Облачна инфраструктура', desc: 'Хибридни среди — Azure и on-premises', top: 0, left: 20 },
+                { icon: <SecurityIcon sx={{ fontSize: 28, color: '#34D399' }} />, title: 'Киберсигурност', desc: 'Проактивно откриване и реакция на заплахи', top: 130, left: 80 },
+                { icon: <SupportAgentIcon sx={{ fontSize: 28, color: '#F59E0B' }} />, title: 'Денонощен Help Desk', desc: 'Дежурни инженери на разположение', top: 260, left: 10 },
               ].map((card) => (
                 <Box
                   key={card.title}
@@ -213,7 +214,7 @@ export default function HeroSection() {
                     position: 'absolute',
                     top: card.top,
                     left: card.left,
-                    width: 260,
+                    width: 300,
                     bgcolor: 'rgba(255,255,255,0.08)',
                     border: '1px solid rgba(255,255,255,0.15)',
                     borderRadius: 3,

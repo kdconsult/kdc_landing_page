@@ -17,11 +17,11 @@ import CloseIcon from '@mui/icons-material/Close';
 import PhoneIcon from '@mui/icons-material/Phone';
 
 const NAV_LINKS = [
-  { label: 'Services', href: '#services' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'About', href: '#about' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Услуги', href: '#services' },
+  { label: 'Цени', href: '#pricing' },
+  { label: 'За нас', href: '#about' },
+  { label: 'Отзиви', href: '#testimonials' },
+  { label: 'Контакти', href: '#contact' },
 ];
 
 export default function NavBar() {
@@ -129,7 +129,7 @@ export default function NavBar() {
                 href="#contact"
                 sx={{ borderRadius: 2 }}
               >
-                Get a Free Audit
+                Безплатен одит
               </Button>
             </Box>
 
@@ -185,7 +185,7 @@ export default function NavBar() {
               onClick={() => setDrawerOpen(false)}
               sx={{ borderRadius: 2, py: 1.25 }}
             >
-              Get a Free Audit
+              Безплатен одит
             </Button>
           </Box>
         </Box>
