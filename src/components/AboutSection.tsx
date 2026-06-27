@@ -56,7 +56,7 @@ export default function AboutSection() {
           <Typography variant="subtitle2" sx={{ color: 'secondary.main', mb: 1.5 }}>
             About K&amp;D Consult
           </Typography>
-          <Grid container spacing={{ xs: 0, md: 6 }} alignItems="flex-end">
+          <Grid container spacing={{ xs: 0, md: 6 }} sx={{ alignItems: 'flex-end' }}>
             <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h2"
@@ -80,7 +80,7 @@ export default function AboutSection() {
         <Divider sx={{ mb: { xs: 6, md: 8 } }} />
 
         {/* ── Two balanced columns ── */}
-        <Grid container spacing={{ xs: 5, md: 6 }} alignItems="stretch">
+        <Grid container spacing={{ xs: 5, md: 6 }} sx={{ alignItems: 'stretch' }}>
 
           {/* Left: dark stat panel */}
           <Grid size={{ xs: 12, md: 5 }}>
@@ -263,7 +263,7 @@ export default function AboutSection() {
               >
                 Certifications &amp; Partnerships
               </Typography>
-              <Stack direction="row" flexWrap="wrap" gap={1}>
+              <Stack direction="row" sx={{ flexWrap: 'wrap', gap: 1 }}>
                 {CERTIFICATIONS.map((cert) => (
                   <Chip
                     key={cert}

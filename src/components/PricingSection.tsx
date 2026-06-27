@@ -120,7 +120,7 @@ export default function PricingSection() {
           </Typography>
         </Box>
 
-        <Grid container spacing={3} alignItems="stretch">
+        <Grid container spacing={3} sx={{ alignItems: 'stretch' }}>
           {PLANS.map((plan) => (
             <Grid key={plan.name} size={{ xs: 12, md: 4 }}>
               <Card

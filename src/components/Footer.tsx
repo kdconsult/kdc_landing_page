@@ -41,7 +41,7 @@ export default function Footer() {
         }}
       >
         <Container maxWidth="lg">
-          <Grid container spacing={{ xs: 5, md: 8 }} alignItems="flex-start">
+          <Grid container spacing={{ xs: 5, md: 8 }} sx={{ alignItems: 'flex-start' }}>
             {/* Left: Contact details */}
             <Grid size={{ xs: 12, md: 5 }}>
               <Typography variant="subtitle2" sx={{ color: 'secondary.main', mb: 1.5 }}>

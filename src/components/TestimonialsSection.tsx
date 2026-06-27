@@ -86,7 +86,7 @@ const TESTIMONIALS = [
   },
 ];
 
-function StarRating({ count }: { count: number }) {
+function StarRating({ count }: { readonly count: number }) {
   return (
     <Stack direction="row" spacing={0.25}>
       {Array.from({ length: count }).map((_, i) => (

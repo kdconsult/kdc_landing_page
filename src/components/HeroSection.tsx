@@ -7,7 +7,7 @@ import Chip from '@mui/material/Chip';
 import Grid from '@mui/material/Grid';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircle';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import SecurityIcon from '@mui/icons-material/Security';
 import CloudIcon from '@mui/icons-material/Cloud';
@@ -83,10 +83,10 @@ export default function HeroSection() {
       />
 
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
-        <Grid container spacing={4} alignItems="center">
+        <Grid container spacing={4} sx={{ alignItems: 'center' }}>
           <Grid size={{ xs: 12, md: 7 }}>
             {/* Trust badges */}
-            <Stack direction="row" spacing={1} flexWrap="wrap" sx={{ mb: 3, gap: 1 }}>
+            <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', mb: 3, gap: 1 }}>
               {TRUST_BADGES.map((badge) => (
                 <Chip
                   key={badge.label}

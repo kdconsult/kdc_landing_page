@@ -154,7 +154,7 @@ export default function ServicesSection() {
                     {service.description}
                   </Typography>
 
-                  <Stack direction="row" flexWrap="wrap" gap={0.75}>
+                  <Stack direction="row" sx={{ flexWrap: 'wrap', gap: 0.75 }}>
                     {service.features.map((f) => (
                       <Chip
                         key={f}

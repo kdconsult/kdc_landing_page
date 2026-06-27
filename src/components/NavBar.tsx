@@ -170,7 +170,7 @@ export default function NavBar() {
               >
                 <ListItemText
                   primary={link.label}
-                  slotProps={{ primary: { fontWeight: 500 } }}
+                  slotProps={{ primary: { sx: { fontWeight: 500 } } }}
                 />
               </ListItem>
             ))}
